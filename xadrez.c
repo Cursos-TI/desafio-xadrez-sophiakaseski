@@ -5,14 +5,11 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
-    const int casasBispo = 5;
+      const int casasBispo = 5;
     const int casasTorre = 5;
     const int casasRainha = 8;
 
     int i;
-
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
 
     printf("Movimento do Bispo:\n");
     i = 0;
@@ -21,16 +18,10 @@ int main() {
         i++;
     }
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
-
     printf("\nMovimento da Torre:\n");
     for (i = 0; i < casasTorre; i++) {
         printf("Direita\n");
     }
-
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
 
     printf("\nMovimento da Rainha:\n");
     i = 0;
@@ -40,16 +31,26 @@ int main() {
     } while (i < casasRainha);
 
     // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    // Utilizando loops aninhados para simular o movimento em L
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+    printf("\nMovimento do Cavalo:\n");
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+    int baixo = 0;
+    int esquerda = 0;
 
+    // Loop externo (for) → movimento vertical (2 casas para baixo)
+    for (baixo = 0; baixo < 2; baixo++) {
+
+        // Loop interno (while) → movimento horizontal (1 casa para esquerda)
+        esquerda = 0;
+        while (esquerda < 1) {
+
+            printf("Baixo Esquerda\n");
+            esquerda++;
+        }
+    }
+
+    // Nível Mestre
 
     return 0;
 }
